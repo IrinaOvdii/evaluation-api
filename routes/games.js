@@ -3,6 +3,7 @@ const router = require('express').Router()
 const passport = require('../config/auth')
 const { Game } = require('../models')
 const utils = require('../lib/utils')
+const processMove = require('../lib/processMove')
 
 const authenticate = passport.authorize('jwt', { session: false })
 
@@ -45,29 +46,15 @@ module.exports = io => {
         })
         .catch((error) => next(error))
     })
-    .put('/games/:id', authenticate, (req, res, next) => {
-      const id = req.params.id
-      const updatedGame = req.body
-
-      Game.findByIdAndUpdate(id, { $set: updatedGame }, { new: true })
-        .then((game) => {
-          io.emit('action', {
-            type: 'GAME_UPDATED',
-            payload: game
-          })
-          res.json(game)
-        })
-        .catch((error) => next(error))
-    })
     .patch('/games/:id', authenticate, (req, res, next) => {
       const id = req.params.id
-      const patchForGame = req.body
+      const userId = req.account._id.toString()
 
       Game.findById(id)
         .then((game) => {
           if (!game) { return next() }
 
-          const updatedGame = { ...game, ...patchForGame }
+          const updatedGame = processMove(game, req.body, userId)
 
           Game.findByIdAndUpdate(id, { $set: updatedGame }, { new: true })
             .then((game) => {
