@@ -7,7 +7,7 @@
     "students": [
       {
         "name": "Bobby",
-        "photo": "http://cd.sseu.re/mixed-seafood-paella.jpeg",
+        "photo": "http://via.placeholder.com/500x180?text=No%20Image",
         "evaluation": [
           {
             "color": "Green",
@@ -19,7 +19,7 @@
       },
       {
         "name": "Kolin",
-        "photo": "http://cd.sseu.re/mixed-seafood-paella.jpeg",
+        "photo": "http://via.placeholder.com/500x180?text=No%20Image",
         "evaluation": [
           {
             "color": "Green",
@@ -28,7 +28,64 @@
           }
          ],
         "lastColor": "Green"
+      },
+      {
+        "name": "Oscar",
+        "photo": "http://via.placeholder.com/500x180?text=No%20Image",
+        "evaluation": [
+          {
+            "color": "Yellow",
+            "date": "2017-03-21",
+            "remark": "Super!"
+          }
+         ],
+        "lastColor": "Green"
+      }
+    ]
+  },
+  {
+    "batchNumber": "two",
+    "startDate": "2018-01-01",
+    "endDate": "2018-03-01",
+    "rating": "Green",
+    "students": [
+      {
+        "name": "Anna",
+        "photo": "http://via.placeholder.com/500x180?text=No%20Image",
+        "evaluation": [
+          {
+            "color": "Yellow",
+            "date": "2018-01-21",
+            "remark": "Good!"
+          }
+         ],
+        "lastColor": "Green"
+      },
+      {
+        "name": "Daniel",
+        "photo": "http://via.placeholder.com/500x180?text=No%20Image",
+        "evaluation": [
+          {
+            "color": "Green",
+            "date": "2018-01-22",
+            "remark": "Good!"
+          }
+         ],
+        "lastColor": "Green"
+      },
+      {
+        "name": "Renato",
+        "photo": "http://via.placeholder.com/500x180?text=No%20Image",
+        "evaluation": [
+          {
+            "color": "Green",
+            "date": "2018-01-20",
+            "remark": "Super!"
+          }
+         ],
+        "lastColor": "Green"
       }
     ]
   }
+
 ]

@@ -15,7 +15,7 @@ const studentsSchema = new Schema({
   lastColor: { type: String }
 })
 
-const batchesSchema = new Schema({
+const batchSchema = new Schema({
   batchNumber: { type: String },
   startDate: { type: Date },
   endDate: { type: Date },
@@ -23,7 +23,7 @@ const batchesSchema = new Schema({
   rating:  { type: String }
 })
 
-module.exports = mongoose.model('batches', batchesSchema)
+module.exports = mongoose.model('batches', batchSchema)
 
 // const playerSchema = new Schema({
 //   userId: { type: Schema.Types.ObjectId, ref: 'users' },

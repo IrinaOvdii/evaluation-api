@@ -1,7 +1,7 @@
 // routes/batches.js
 const router = require('express').Router()
 const passport = require('../config/auth')
-const { Batches } = require('../models')
+const { Batch } = require('../models')
 const utils = require('../lib/utils')
 
 const authenticate = passport.authorize('jwt', { session: false })
@@ -29,7 +29,6 @@ module.exports = io => {
     })
     .post('/batches', authenticate, (req, res, next) => {
       const newBatch = {
-
         ...req.body
       }
 
