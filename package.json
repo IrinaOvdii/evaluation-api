@@ -5,10 +5,11 @@
   "main": "index.js",
   "license": "MIT",
   "engines": {
-    "node": "9"
+    "node": "8.5"
   },
   "scripts": {
     "start": "node .",
+    "seed": "node db/seed.js",
     "dev": "nodemon --inspect ."
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "socketio-jwt-auth": "^0.0.6"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "superagent": "^3.8.2"
   }
 }
