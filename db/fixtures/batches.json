@@ -15,7 +15,7 @@
             "remark": "Lorem Ipsum is simply dummy text"
           }
          ],
-        "lastColor": "Green"
+        "lastColor": "Yellow"
       },
       {
         "name": "Kolin Jaager",
@@ -27,7 +27,7 @@
             "remark": "Lorem Ipsum is simply dummy text"
           }
          ],
-        "lastColor": "Green"
+        "lastColor": "Red"
       },
       {
         "name": "Oscar Peters",
@@ -51,7 +51,7 @@
             "remark": "Lorem Ipsum is simply dummy text"
           }
          ],
-        "lastColor": "Green"
+        "lastColor": "Red"
       }
     ]
   },
@@ -83,7 +83,7 @@
             "remark": "Lorem Ipsum is simply dummy text"
           }
          ],
-        "lastColor": "Green"
+        "lastColor": "Red"
       },
       {
         "name": "Renato Rynsburger",
@@ -107,7 +107,7 @@
             "remark": "Lorem Ipsum is simply dummy text"
           }
          ],
-        "lastColor": "Green"
+        "lastColor": "Yellow"
       }
     ]
   }
