@@ -1,5 +1,5 @@
 {
-  "host": "memoryb8api.herokuapp.com",
+  "host": "evaluation-ovdii-api.herokuapp.com",
   "port": "PORT",
   "mongodb": "MONGODB_URI"
 }
